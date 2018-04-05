@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         logger_.debug("onCreate called");
 
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(new CanvasView(this));
     }
+
+
 }

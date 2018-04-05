@@ -38,6 +38,7 @@ public abstract class SafeLog {
     public void debug (String msg) {
         debug(getTag(), msg);
     }
+
     public static void debug (String tag, String msg) {
         if (BuildConfig.DEBUG) {
             Log.d(tag, msg);
